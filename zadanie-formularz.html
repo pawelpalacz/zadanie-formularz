@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+<body>
+        <form method="POST" action="https://formspree.io/pawelpalacz4455@gmail.com">
+        <label for="name">Imię:</label>
+        <input type="text" name="name" id="name">
+
+        <label for="lastname">Nazwisko:</label>
+        <input type="text" name="lastname" id="lastname">
+
+        <label for="mail">E-mail:</label>
+        <input type="email" name="_replyto" id="mail">
+
+        <label for="phone">Telefon:</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="city">Wybierz miasto:</label>
+        <select name="city" id="city">
+            <option value="krakow">Kraków</option>
+            <option value="warszawa">Warszawa</option>
+            <option value="gdansk">Gdańsk</option>
+        </select>
+
+      	<p>Wybierz płeć:</p>
+        <label for="male"><input type="radio" name="gender" value="male" id="male">Mężczyzna</label>
+        <label for="female"><input type="radio" name="gender" value="female" id="female">Kobieta</label>
+        <br>
+        <label for="message">Wiadomość: </label>
+        <textarea name="message" id="message"></textarea>
+        <br>
+        <label for="agreement">Wyrażam zgodę na przetwarzanie danych osobowych<input type="checkbox" id="agreement" name="agreement"></label>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
